@@ -1,8 +1,33 @@
-# React + Vite
+# Hospital-Run
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Project Overview:**
 
-Currently, two official plugins are available:
+Hospital Run is an open-source electronic medical record (EMR) system designed to simplify patient management and improve healthcare delivery. It's built with modern web technologies, providing a user-friendly interface for healthcare professionals.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+**Key Features:**
+
+**Patient Management:** Easily create and manage patient records, including medical history, treatments, medicine and appointments.
+
+**Appointment Scheduling:** Streamline appointment scheduling for healthcare providers and patients, reducing wait times and improving efficiency.
+
+**User-friendly Interface:** Intuitive and responsive design to ensure a seamless user experience for healthcare professionals and administrators.
+
+
+**Technologies Used:**
+
+Frontend: React.js, Redux
+
+Testing: Jest, React Testing Library
+
+Styling: CSS-in-JS (e.g., styled-components)
+
+
+**Getting Started:**
+
+Clone the repository: git clone https://github.com/manasabingi115/Hospital-Run.git
+
+Install dependencies: npm install
+
+Run the development server: npm run dev 
+
+
