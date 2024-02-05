@@ -1,0 +1,273 @@
+@import "https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css";
+@import "react-super-responsive-table/dist/SuperResponsiveTableStyle.css";
+
+.App {
+  font-family: sans-serif;
+  font-size: small;
+}
+
+.main-container {
+  display: flex;
+}
+/* status pop-up START */
+
+.pop-up-container {
+  position: fixed;
+  background: black;
+  color: white;
+  width: fit-content;
+  padding: 10px 15px 10px 15px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 6px;
+  transition: 1s;
+  right: -260px;
+}
+
+.success-div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 10px;
+}
+.pop-up-container > p,
+.success-div > p {
+  margin: 0px;
+}
+
+.pop-up-slide {
+  transition: 1s;
+  right: 0;
+}
+
+/* status pop-up END */
+
+#side-bar {
+  border-right: 1px solid lightgray;
+  cursor: pointer;
+  width: 170px;
+  height: 100%;
+  background-color: white;
+}
+.menu-icon,
+.menu-close-icon {
+  display: none;
+}
+.side-menu {
+  position: absolute;
+  z-index: 2;
+}
+.main-div {
+  width: 80%;
+  padding: 10px 50px 50px 50px;
+  position: absolute;
+  right: 0px;
+  z-index: 1;
+}
+
+.NPRow {
+  display: flex;
+}
+.inputs {
+  flex: 1;
+  margin-right: 20px;
+}
+.date-input-child {
+  display: flex;
+  align-items: center;
+}
+.NPDiv {
+  border: 1px solid rgb(35, 201, 173);
+  border-radius: 5px;
+  padding-bottom: 30px;
+  margin-bottom: 20px;
+}
+.NPRow {
+  padding: 10px 10px 0px 20px;
+}
+.NPDiv-p {
+  padding: 10px 20px;
+  border-bottom: 1px solid lightgray;
+  background: rgb(243, 241, 241);
+  border-radius: 6px 6px 0px 0px;
+}
+.NPDiv2-boxes {
+  padding: 20px;
+}
+.red-star {
+  color: red;
+  font-size: 7px;
+  margin-left: 8px;
+}
+.red-star-content {
+  display: flex;
+  align-items: center;
+}
+.hosp-icon {
+  height: 30px;
+  width: 30px;
+}
+.header {
+  background: black;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.hosp-icon-with-name {
+  display: flex;
+  align-items: center;
+}
+.hosp-icon-with-name > h1 {
+  color: white;
+  font-size: 25px;
+  margin-left: 15px;
+  letter-spacing: 1px;
+}
+.input {
+  font-size: smaller;
+  margin-top: 5px;
+  margin-bottom: 15px;
+}
+.child-tabs > #all-tab-child {
+  font-size: smaller;
+  padding: 8px 15px;
+  background-color: rgb(247, 242, 242);
+}
+.child-tab-active > #all-tab-child {
+  padding: 8px 15px;
+  background: darkseagreen;
+  color: black;
+  font-size: smaller;
+}
+.parent-child-tabs {
+  border-bottom: 1.5px solid green;
+}
+.parent-tab {
+  padding: 10px 25px;
+  border-bottom: 1px solid lightgray;
+  display: block;
+}
+.selected-button {
+  background-color: green;
+  color: white !important;
+}
+.main-div > h2 {
+  font-size: x-large;
+  border-bottom: 1px solid lightgray;
+  margin-bottom: 25px;
+  font-weight: 500;
+  font-family: system-ui;
+  padding-bottom: 15px;
+}
+.patient-basic-info {
+  border: 1.5px solid mediumseagreen;
+  border-radius: 8px;
+  padding: 15px;
+  line-height: 40px;
+}
+.patient-details-input {
+  border: none;
+  font-size: medium;
+  font-weight: 500;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th,
+td {
+  padding: 8px;
+  text-align: left;
+}
+
+tr {
+  border-bottom: 1px solid #ddd;
+}
+
+/* medications, labs, imagings, incidents */
+
+.inputs-in-medications,
+.child-input-in-medications,
+.textarea-in-medications,
+.inputs-in-labs,
+.textarea-in-labs,
+.child-input-in-labs,
+.child-input-in-imagings,
+.inputs-in-imagings,
+.textarea-in-imagings,
+.textarea-in-incidents {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  color: gray;
+  margin: 8px 0px 20px 0px;
+}
+
+.child-div-in-medications,
+.child-div-in-labs,
+.child-div-in-imagings,
+.child-div-in-incidents {
+  flex: 1;
+}
+
+.parent-to-child-inputs-in-medications,
+.parent-to-child-inputs-in-labs,
+.parent-to-child-inputs-in-imagings,
+.parent-to-child-inputs-in-incidents {
+  display: flex;
+}
+
+.textarea-in-medications,
+.textarea-in-labs,
+.textarea-in-imagings,
+.textarea-in-incidents {
+  resize: vertical;
+}
+
+.back-button {
+  border: none;
+  background: black;
+  color: white;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-size: large;
+}
+
+.view-button {
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 650px) {
+  .side-menu-hide {
+    display: none;
+  }
+  .menu-icon,
+  .menu-close-icon {
+    display: block;
+  }
+  .main-div {
+    width: 100%;
+    padding: 10px 35px 50px 35px;
+  }
+  .menu-icon {
+    position: absolute;
+    top: -75px;
+    color: white;
+    font-size: xx-large;
+    padding: 15px;
+  }
+  .hosp-icon-with-name {
+    margin-left: 55px;
+  }
+  .NPRow {
+    flex-direction: column;
+  }
+}
