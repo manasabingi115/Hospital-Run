@@ -64,7 +64,9 @@ export default function Menu() {
             }
           </NavLink>
         </div>
-        <div className="tab">
+
+        {/* commenting schedule as it is still in development */}
+        {/* <div className="tab">
           <NavLink
             to="/scheduling"
             className={({ isActive }) =>
@@ -77,10 +79,6 @@ export default function Menu() {
             {({ isActive }) =>
               isActive ? (
                 <div className="parent-child-tabs">
-                  {/* <p id="schedule-tab-child" className="child-tabs">
-                  New Appointment
-                </p>
-                 */}
                   <NavLink
                     to="/scheduling/appointment-schedule"
                     className={({ isActive }) =>
@@ -93,7 +91,7 @@ export default function Menu() {
               ) : null
             }
           </NavLink>
-        </div>
+        </div> */}
 
         <div className="tab">
           <NavLink
